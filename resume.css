@@ -1,15 +1,13 @@
-/* تنسيقات عامة */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f6f9;
+    background-color: #292929;
     color: #333;
 }
 
 header {
-    background-color: #e9ecef;
+   background-color: #292929;
 }
 
-/* تنسيق الصورة الشخصية */
 .profile-img {
     width: 120px;
     height: 120px;
@@ -18,52 +16,33 @@ header {
     border: 4px solid #212529;
 }
 
-/* تنسيق بطاقات الأقسام */
 .section-card {
-    background: white;
+    background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-
-/* --- تلبية شرط استخدام Grid --- */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
 
-.certifications-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-
-/* --- تلبية شرط التجاوب (Media Queries لـ 3 مقاسات) --- */
-
-/* 1. الشاشات الصغيرة (576px فأكثر) */
 @media (min-width: 576px) {
     .projects-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* 2. الشاشات المتوسطة كالأجهزة اللوحية (768px فأكثر) */
 @media (min-width: 768px) {
     .projects-grid {
-        grid-template-columns: 1fr 1fr; /* عرض المشروعين بجانب بعضهما */
-    }
-    .profile-img {
-        width: 180px;
-        height: 180px;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-/* 3. الشاشات الكبيرة (992px فأكثر) */
 @media (min-width: 992px) {
     main.container {
-        max-width: 850px; /* ترتيب المحتوى في المنتصف ليصبح أجمل */
+        max-width: 850px;
     }
 }
